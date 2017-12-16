@@ -13,7 +13,6 @@ RSpec.describe 'An ideal sandwich' do
 
   it "is delicious" do
     taste = sandwich.taste
-
     expect(taste).to eq('delicious')
   end
 
