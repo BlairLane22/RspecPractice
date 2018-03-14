@@ -12,11 +12,12 @@ class Coffee
   end
 
   def color
-    ingredients.include?(:milk) ? :light : :dark
+    ingredients.include?(:milk) ? :dark : :light
   end
 
   def temperature
-    ingredients.include?(:milk) ? 190.0 : 205.0
+    # ingredients.include?(:milk) ? 190.0 : 205.0
+    190.0
   end
 end
 
@@ -43,7 +44,7 @@ RSpec.describe 'A cup of coffee' do
   end
 
   it "should be light in color" do
-    expect(coffee.color).to be eq(:light)
+    expect(coffee.color).to eq(:light)
   end
 
   it "should be less that 200 degrees F" do
